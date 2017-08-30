@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 import '../Styles/App.css';
 
-export default class AboutPage extends Component {
+export default class Portfolio extends Component {
   render() {
     return (
 
       <div>
-      <h1>About Page</h1>
+      <h1>Portfolio Page</h1>
       </div>
 
     );
