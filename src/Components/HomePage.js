@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
-import '../Styles/App.css';
 
-export default class HomePage extends Component {
-  render() {
-    return (
-      <div>
-      <h1>Home Page</h1>
-      </div>
-    );
-  }
+
+const HomePage = (props) => {
+  return(
+
+    <div className="container-fluid">
+     <h1>Welcome to your home page!!</h1>
+    </div>
+
+  );
 }
+
+export default HomePage;

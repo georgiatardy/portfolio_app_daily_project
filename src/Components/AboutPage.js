@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 
-import '../Styles/App.css';
+import '../Styles/index.css';
 
 export default class AboutPage extends Component {
   render() {
     return (
 
-      <div>
-      <h1>About Page</h1>
+      <div className="container-fluid">
+
+      <h1>This is your About Page</h1>
+
       </div>
+
 
     );
   }
