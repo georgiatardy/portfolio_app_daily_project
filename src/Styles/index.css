@@ -4,11 +4,24 @@
   font-family: 'Raleway', sans-serif;
 }
 
-/*Navigation Bar*/
 
-.header {
+header {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  height: 10px;
   padding: 5% 0;
+  background-color: #379FCB;
+  border-radius: 20px;
+
+
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
 }
