@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 // import App, from './App.js';
 
@@ -12,19 +12,23 @@ export default class BaseLayout extends Component {
 
   render() {
     return (
+ <div>
+      <header>
+          <div className="home"><NavLink to="/HomePage">Home Page</NavLink></div>
 
-      <div className="container-fluid">
-      <nav>
-          <Link  activeClassName="selected" to="/HomePage">Home</Link>
+          <div className="about"><NavLink to="/AboutPage">About Page</NavLink></div>
 
-          <Link  activeClassName="selected" to="/AboutPage">About</Link>
+          <div className="portfolio"><NavLink to="/Portfolio">Portfolio</NavLink></div>
+      </header>
 
-          <Link  activeClassName="selected" to="/Portfolio">Portfolio</Link>
-      </nav>
-
+  <section className="content">
   {this.props.children}
-     </div>
+  </section>
 
+  <footer>
+   <a href="https://www.georgiatardyart.com"> Website </a>
+  </footer>
+</div>
 
     );
   }
